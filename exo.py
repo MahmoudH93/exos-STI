@@ -65,11 +65,13 @@ print(intervalle4(2))
 
 
 def signe(x):
+    if x==0:
+        return ("nul")
     if x<0:
         return ("negatif")
-    elif x>0:
+    if x>0:
         return ("positif")
-print(signe(-5))
+print(signe(0))
 
 
 def est_bissextile(n):
@@ -80,5 +82,6 @@ def est_bissextile(n):
     if n%4==0:
         return (n,"est bissextile")
 print(est_bissextile(2000))
+
 
 
