@@ -84,4 +84,68 @@ def est_bissextile(n):
 print(est_bissextile(2000))
 
 
+def nb_pairs(n):
+    for k in range(n+1):
+        print(2*k)
+print(nb_pairs(5))
+
+
+def suite(n):
+    u=1
+    for i in range(n):
+        u=2*u+i
+    return u
+print(suite(10))
+
+
+def seuil(eps):
+    u=1
+    n=0
+    while (u>eps):
+        u=u/(n+1)
+        n=n+1
+    return n
+
+
+def somme_puissance_trois(n):
+    S=0
+    for j in range(4,n):
+        S=S+3**j
+    return S
+print(somme_puissance_trois(23))
+
+
+def somme_puissances(n,p):
+    for i in range(1,n):
+        n=n**p
+    return n
+
+
+def mult_7(n):
+    counter=0
+    for i in range(1,n+1):
+        if i%7==0:
+            counter+=1
+    return counter
+print(mult_7(15))
+
+
+def mult_7_pas_3_5(n):
+    counter=0
+    for i in range(1,n+1):
+        if i%7==0 and (i%3!=0 and i%5!=0):
+            counter+=1
+    return counter
+print(mult_7_pas_3_5(35))
+
+
+def est_parfait(n):
+    counter=0
+    for i in range(1,n+1):
+        if n%i==0:
+            counter+=i
+    return counter == 2*n
+print(est_parfait(6))
+
+
 
