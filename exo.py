@@ -148,4 +148,33 @@ def est_parfait(n):
 print(est_parfait(6))
 
 
+def factorielle(n):
+    fact=1
+    for i in range(1, n+1):
+        fact=fact*i
+    return fact
+print(factorielle(6))
+
+
+def suite_u(n):
+    u=4
+    for i in range(n):
+        u=2-u/2
+    return u
+print(suite_u(8))
+
+
+def suite_F(n):
+    if n==0:
+        return0
+    elif n==1:
+        return 1
+    else:
+        F0,F1=0.1
+    for i in range(2,n+1):
+        Fn=F1+F0
+        F0,F1=F1,Fn
+    return F1
+
+
 
