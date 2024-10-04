@@ -178,3 +178,100 @@ def suite_F(n):
 
 
 
+
+def f (n):
+    n>0
+    return n*'c'
+print(f (3))
+
+
+def f (n,m):
+    n>0
+    m>0
+    return n*'c', m*'d'
+print(f (3,5))
+
+
+def f (n):
+    n>0
+    return n*'ch'
+print(f (3))
+
+
+
+def sous_chaine (ch1,ch2):
+    return ch1 in ch2 or ch2 in ch1
+
+
+def triple_six(ch):
+    return '666' in ch
+
+
+def triple_six_exact(ch):
+    n=len(ch)
+    if ch[0:3]== '666' and ch[3]!='6':
+        return True
+    if ch[n-3:n]== '666' and ch[n-4]!='6':
+        return True
+    for k in range(1,n-3):
+        if ch[k:k+3]=='666' and ch[k-1]!='6' and ch[k+3]!='6':
+            return True
+        return False
+
+
+def miroir2(ch):
+    inv=''
+    for e in ch:
+        inv=e+inv
+    return inv
+
+
+def palindrome(ch):
+    return ch==ch[::-1]
+
+
+
+def affiche4():
+    for m in range (4):
+        print(m)
+
+
+L=[]
+for k in range(1,101):
+    L+=[k]
+print(L)
+
+
+L=[]
+for k in range(1,101):
+    L.append(k)
+print(L)
+
+
+
+L=[]
+L=100*[0]
+for k in range(1,101):
+    L[k-1]=k
+print(L)
+
+for i in range(len(L)):
+    L[i]*=2
+print(L)
+
+
+
+def carre(n):
+    return [i**2 for i in range(1,n+1)]
+print(carre(5))
+
+
+doubles=[2*i for i in range(1,10)]
+print(doubles)
+
+def carre_compr(n):
+        return [i**2 for i in range(1,n+1)]
+print(carre(5))
+
+
+
