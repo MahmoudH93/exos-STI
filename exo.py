@@ -271,7 +271,7 @@ print(doubles)
 
 def carre_compr(n):
         return [i**2 for i in range(1,n+1)]
-print(carre(5))
+print(carre_compr(10))
 
 
 
