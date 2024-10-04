@@ -274,4 +274,12 @@ def carre_compr(n):
 print(carre_compr(10))
 
 
+[i for i in range(1,20,2)]
+
+[i**2 for i in range(11)]
+
+[2**i for i in range(11)]
+
+[i for i in range(3,52) if i%3==0]
+
 
