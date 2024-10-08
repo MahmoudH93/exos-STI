@@ -283,3 +283,32 @@ print(carre_compr(10))
 [i for i in range(3,52) if i%3==0]
 
 
+
+def indices(ch,c):
+    result = []
+    for i in range(len(ch)):
+        if ch[i] == c:
+            result.append(i)
+    return result
+print(indices("aaabbbcccddd","a"))
+
+
+def sous_liste(L1,L2):
+    for i in range(len(L1)):
+        if L2 in L1:
+            return True
+        else:
+            return False
+print(sous_liste([1,[2]],[2]))
+
+
+def tous_positifs(L):
+    for i in L:
+        if i<0:
+            return False
+    return True
+print(tous_positifs([12,76,-276]))
+
+
+
+
