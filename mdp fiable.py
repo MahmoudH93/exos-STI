@@ -13,7 +13,7 @@ if any(c.isupper() for c in mdp):
 if any(c.isdigit() for c in mdp):
     counter += 1
 
-if any(c in '@#$%^,;:!?./§ù¨£*µ=+)àç_è-("é&²}]\`|[{' for c in mdp):
+if any(c in '@#$%^,;:!?./§ù¨£*µ=+)àç_è-("é&²}]\`|[{<>' for c in mdp):
     counter += 1
 
 if counter == 0:
